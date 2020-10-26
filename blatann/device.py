@@ -103,6 +103,7 @@ class BleDevice(NrfDriverObserver):
         self._default_conn_config = nrf_types.BleConnConfig(event_length=6,                                       # Minimum event length required for max DLE
                                                             hvn_tx_queue_size=notification_hw_queue_size,         # Hardware queue of 16 notifications
                                                             write_cmd_tx_queue_size=write_command_hw_queue_size)  # Hardware queue of 16 write cmds (no response)
+                                                            max_att_mtu=250)  # Hardware queue of 16 write cmds (no response)
 
         self.bond_db_loader = default_bond_db.DefaultBondDatabaseLoader()
         self.bond_db = default_bond_db.DefaultBondDatabase()

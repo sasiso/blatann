@@ -15,12 +15,12 @@ logger = logging.getLogger(__name__)
 """
 The default MTU size that's used when a connection is established
 """
-MTU_SIZE_DEFAULT = 23
+MTU_SIZE_DEFAULT = 250
 
 """
 The minimum allowed MTU size
 """
-MTU_SIZE_MINIMUM = 23
+MTU_SIZE_MINIMUM = 250
 
 """
 The ideal MTU size to use when using the maximum link-layer Data Length Extension setting (251) 
